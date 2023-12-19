@@ -232,7 +232,7 @@ static const uint16_t cortexar_spsr_encodings[5] = {
 /*
  * Instruction encodings for coprocessor load/store
  * LDC -> Load Coprocessor (DDI0406C §A8.8.56, pg393)
- * STC -> Store Corprocessor (DDI0406C §A8.8.119, pg663)
+ * STC -> Store Corprocessor (DDI0406C §A8.8.199, pg663)
  */
 #define ARM_LDC_INSN 0xec100000U
 #define ARM_STC_INSN 0xec000000U

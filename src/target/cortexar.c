@@ -1002,7 +1002,7 @@ static void cortexar_mem_read(target_s *const target, void *const dest, const ta
 	cortexr_mem_handle_fault(target, __func__, fault_status, fault_addr);
 }
 
-/* Fast path for cortexar_mem_write(). Assumes the address to read data from is already loaded in r0. */
+/* Fast path for cortexar_mem_write(). Assumes the address to write data to is already loaded in r0. */
 static inline bool cortexr_mem_write_fast(target_s *const target, const uint32_t *const src, const size_t count)
 {
 	/* Read each of the uint32_t's checking for failure */
